@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment - Revanths Mobiles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Payment & Delivery</h1>
+</header>
+
+<div class="payment-container">
+
+    <h3>Delivery Area</h3>
+    <select id="location">
+        <option>Hyderabad</option>
+        <option>Vijayawada</option>
+        <option>Guntur</option>
+        <option>Vizag</option>
+        <option>Tirupati</option>
+    </select>
+
+    <h3>Payment Method</h3>
+    <select id="paymentMethod">
+        <option>Cash on Delivery</option>
+        <option>UPI</option>
+        <option>Credit Card</option>
+        <option>Debit Card</option>
+    </select>
+
+    <button onclick="completeOrder()" class="btn">Place Order</button>
+</div>
+
+<script>
+function completeOrder() {
+    localStorage.setItem("cart", JSON.stringify([]));
+    window.location.href = "thankyou.html";
+}
+</script>
+
+</body>
+</html>
