@@ -1,0 +1,104 @@
+/* GENERAL */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f3f3;
+}
+
+header {
+    background: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* BUTTONS */
+.btn {
+    background: #007bff;
+    color: white;
+    padding: 12px 22px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.center { text-align: center; margin: 20px 0; }
+
+/* BANNER */
+.banner {
+    position: relative;
+}
+.banner img {
+    width: 100%;
+    height: 65vh;
+    object-fit: cover;
+    opacity: 0.8;
+}
+.banner-text {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    color: white;
+}
+
+/* PRODUCT GRID */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.product {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.1);
+    text-align: center;
+}
+.product img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* CART */
+.cart-page {
+    padding: 20px;
+}
+.cart-item {
+    background: white;
+    margin-bottom: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 6px;
+}
+.cart-item img {
+    width: 110px;
+    border-radius: 6px;
+}
+
+/* PAYMENT */
+.payment-container {
+    background: white;
+    padding: 20px;
+    max-width: 420px;
+    margin: 30px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.2);
+}
+
+/* THANK YOU */
+.thankyou-box {
+    text-align: center;
+    padding: 60px;
+}
